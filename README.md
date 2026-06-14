@@ -1,19 +1,14 @@
 <div align="center">
 
-# ✨ <span style="background: linear-gradient(90deg,#00DBDE,#FC00FF); -webkit-background-clip:text; color:transparent; animation: glow 2s infinite alternate;">
-Job Application Page
-</span> ✨
+# ✨ Job Application Page ✨
 
 ### 🎯 Responsive Form UI | FreeCodeCamp Workshop Project
 
-</div>
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Design-00C853?style=for-the-badge)
 
-<style>
-@keyframes glow {
-  0% { text-shadow: 0 0 5px #00DBDE; }
-  100% { text-shadow: 0 0 20px #FC00FF; }
-}
-</style>
+</div>
 
 ---
 
