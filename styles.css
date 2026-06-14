@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 600px;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.726);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label,
+legend {
+  display: block;
+  color: #444;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+input:not([type="radio"]),
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+input:first-of-type {
+  border-radius: 8px; /* Restored to match other inputs instead of pill shape if desired, or keep as 8px */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #ddd; /* Reset to avoid showing red immediately on load before user interaction */
+}
+
+input:focus:invalid,
+select:focus:invalid,
+textarea:focus:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 42px; /* aligns roughly with select height */
+  margin-top: 24px; /* pushes down to align with input/select fields */
+}
+
+.radio-group legend {
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0 6px 0 0;
+  cursor: pointer;
+}
+
+.radio-option label {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: #2196f3;
+  background-color: #bbdefb;
+  box-shadow: 0 0 8px #64b5f6;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.548);
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .radio-group {
+    margin-top: 10px;
+    height: auto;
+  }
+}
