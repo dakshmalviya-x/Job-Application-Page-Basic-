@@ -10,12 +10,7 @@
 
 </div>
 
-<style>
-@keyframes glow {
-  0% { text-shadow: 0 0 5px #00DBDE; }
-  100% { text-shadow: 0 0 20px #FC00FF; }
-}
-</style>
+
 
 ---
 
